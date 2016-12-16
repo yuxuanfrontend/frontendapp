@@ -1,0 +1,43 @@
+@import "./colors.scss";
+@import "./px2rem.scss";
+
+.vl-cell {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: px2rem(88);
+  // line-height: px2rem(48);
+  padding: px2rem(20);
+  margin-bottom: px2rem(40);
+  background-color: $background-white;
+  box-sizing: border-box;
+
+  &__head {
+    width: px2rem(80);
+  }
+
+  &__body {
+    flex: 1;
+    width: 100%;
+  }
+
+  &__foot {
+    // font-size: 0;
+    // width: px2rem(200);
+    // flex-grow: 1;
+    // position: relative;
+  }
+
+  &--sign {
+    border: 1px solid $border-gray;
+  }
+}
+
+.vl-input {
+  width: 100%;
+  // height: px2rem(45);
+  line-height: px2rem(45);
+  border: 0;
+  padding: 0;
+}

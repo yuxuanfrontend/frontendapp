@@ -1,0 +1,33 @@
+@function px2rem($px){
+	@return $px*320/$designWidth/20 + rem;
+}
+
+$designWidth: 750;
+
+@mixin flex-center {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-start {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+@mixin flex-start--col {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+@mixin flex-end {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+}

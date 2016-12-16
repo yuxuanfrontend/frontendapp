@@ -1,0 +1,13 @@
+@import "./colors.scss";
+@import "./px2rem.scss";
+
+.list-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    flex: 1;
+  }
+}

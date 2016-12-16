@@ -1,0 +1,48 @@
+@import "./colors.scss";
+@import "./px2rem.scss";
+
+.vl-btn {
+  width: 100%;
+  line-height: px2rem(80);
+  padding: 0 px2rem(20);
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &--confirm {
+    color: $color-white;
+    background-color: $background-red;
+
+    &:active {
+      background-color: $background-red--active;
+    }
+  }
+
+  &--vertification {
+    width: px2rem(190);
+    color: $color-white;
+    background-color: $color-orange;
+    margin-left: px2rem(16);
+    padding: 0 px2rem(8);
+    line-height: px2rem(76);
+
+    &:active {
+      background-color: $color-orange-active;
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+    width: px2rem(160);
+
+  }
+
+  &--disabled {
+    background-color: $background-grayer;
+
+    &:active {
+      background-color: $background-grayer;
+    }
+  }
+}

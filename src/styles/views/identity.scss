@@ -1,0 +1,30 @@
+@import "../px2rem.scss";
+@import "../colors.scss";
+
+.identity-mt80 {
+  margin-top: px2rem(80);
+}
+
+.identity-body {
+  margin: px2rem(140) px2rem(50) 0;
+
+  &__tail {
+    margin-top: px2rem(30);
+    color: $color-red;
+    text-align: center;
+    font-size: 80%;
+
+    &:active {
+      color: $color-red-active;
+      text-decoration: underline;
+    }
+
+    &--disabled {
+      color: $color-gray;
+
+      &:active {
+        color: $color-gray-active;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "./colors.scss";
+@import "./px2rem.scss";
+
+.toolbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: px2rem(98);
+  font-size: 70%;
+
+  border-top: 1px solid $border-gray;
+  background-color: $background-white;
+  padding: px2rem(6) px2rem(10);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    flex: 1;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
